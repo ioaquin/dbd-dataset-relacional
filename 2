@@ -1,0 +1,44 @@
+group: Ejercicio2
+
+Banda = {
+codigoB, nombreBanda, genero_musical, anno_creacion
+1, "Los Rockeros", "rock and roll", 2010
+2, "Pop Stars", "pop", 2015
+3, "Ratones Paranoicos", "rock", 1985
+4, "Bandita", "rock and roll", 2018
+5, "Electronicos", "electronica", 2020
+}
+
+Integrante = {
+DNI, nombre, apellido, direccion, email, fecha_nacimiento, codigoB
+11111111, "Juan", "Garcia", "Calle 1 N 123", "juan@email.com", 1998-05-15, 1
+22222222, "Maria", "Lopez", "Calle 2 N 456", "maria@email.com", 2002-08-20, 1
+33333333, "Carlos", "Garcia", "Calle 3 N 789", "carlos@email.com", 2006-03-10, 2
+44444444, "Ana", "Martinez", "Calle 4 N 321", "ana@email.com", 2003-11-25, 2
+55555555, "Luis", "Rodriguez", "Calle 5 N 654", "luis@email.com", 2001-07-30, 3
+66666666, "Laura", "Garcia", "Calle 6 N 987", "laura@email.com", 2004-12-05, 4
+77777777, "Pedro", "Sanchez", "Calle 7 N 159", "pedro@email.com", 2003-09-18, 2
+}
+
+Escenario = {
+nroEscenario, nombre_escenario, ubicacion, cubierto, m2, descripcion
+1, "Gustavo Cerati", "Parque Central", true, 500, "Escenario principal"
+2, "Carlos Gardel", "Plaza Mayor", false, 300, "Escenario secundario"
+3, "Luna Park", "Centro Ciudad", true, 800, "Estadio cubierto"
+4, "Anfiteatro", "Bosque Municipal", false, 400, "Escenario al aire libre"
+5, "Teatro Municipal", "Centro", true, 600, "Teatro tradicional"
+}
+
+Recital = {
+fecha, hora, nroEscenario, codigoB
+2019-06-15, "20:00", 1, 1
+2019-07-20, "21:00", 1, 2
+2019-08-10, "19:30", 3, 1
+2019-12-04, "18:00", 2, 3
+2019-12-04, "20:00", 1, 4
+2020-01-25, "20:00", 4, 5
+2020-02-15, "20:30", 1, 2
+2020-03-20, "21:00", 3, 2
+2020-05-10, "19:00", 5, 3
+2020-08-25, "20:00", 4, 1
+}

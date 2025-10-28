@@ -1,0 +1,69 @@
+group: Ejercicio9
+
+Club = {
+IdClub, nombre, ciudad
+1, "Deportivo La Plata", "La Plata"
+2, "Crucero del Sur", "La Plata"
+3, "Centro Fomento LH", "La Plata"
+4, "Club Berisso", "Berisso"
+5, "Atletico Ensenada", "Ensenada"
+6, "Deportivo City Bell", "La Plata"
+}
+
+Complejo = {
+IdComplejo, nombre, IdClub
+1, "Norte", 1
+2, "Sur", 1
+3, "Centro", 3
+4, "Principal", 2
+5, "Sede Social", 4
+6, "Estadio", 3
+}
+
+Cancha = {
+IdCancha, nombre, IdComplejo
+1, "Cancha 1", 1
+2, "Cancha 2", 1
+3, "Cancha 3", 1
+4, "Cancha Principal", 2
+5, "Cancha Auxiliar", 2
+6, "Cancha 1", 3
+7, "Cancha 2", 3
+8, "Cancha 3", 3
+9, "Cancha Futbol", 4
+10, "Cancha Basquet", 5
+11, "Cancha 1", 6
+}
+
+Entrenador = {
+IdEntrenador, nombreEntrenador, fechaNacimiento, direccion
+1, "Marcos Perez", 1975-03-15, "Calle 50 N 1234"
+2, "Hansi Flick", 1965-02-24, "Av. 7 N 567"
+3, "Carlos Bianchi", 1949-04-26, "Calle 10 N 432"
+4, "Laura Martinez", 1980-08-12, "Diagonal 80 N 789"
+5, "Roberto Sanchez", 1978-11-30, "Calle 25 N 654"
+}
+
+Entrenamiento = {
+IdEntrenamiento, fecha, IdEntrenador, IdCancha
+1, 2024-01-15, 1, 1
+2, 2024-01-15, 1, 2
+3, 2024-01-20, 1, 3
+4, 2024-02-10, 1, 4
+5, 2024-02-15, 1, 9
+6, 2024-03-01, 2, 1
+7, 2024-03-05, 2, 2
+8, 2024-03-10, 2, 6
+9, 2024-03-15, 3, 6
+10, 2024-03-20, 3, 7
+11, 2024-03-25, 3, 8
+12, 2024-04-01, 4, 10
+13, 2024-04-05, 4, 11
+14, 2024-04-10, 5, 1
+15, 2024-04-15, 5, 6
+16, 2024-01-15, 1, 6
+17, 2024-01-15, 1, 7
+18, 2024-01-15, 1, 8
+19, 2024-05-20, 2, 10
+20, 2024-05-25, 2, 11
+}

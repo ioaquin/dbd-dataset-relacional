@@ -1,0 +1,63 @@
+group: Ejercicio7
+
+Vehiculo = {
+patente, modelo, marca, peso:number, km:number
+"AAA111", "Modelo1", "Marca1", 1500, 5000
+"BBB222", "Modelo2", "Marca2", 2000, 15000
+"CCC333", "Modelo3", "Marca3", 3000, 40000
+"DDD444", "Modelo4", "Marca4", 2500, 10000
+"EEE555", "Modelo5", "Marca5", 1800, 8000
+"FFF666", "Modelo6", "Marca6", 3500, 360000
+"GGG777", "Modelo8", "Marca8", 4000, 9000
+"AAA564", "Modelo7", "Marca7", 1200, 20000
+}
+
+Camion = {
+patente, largo:number, max_toneladas:number, cant_ruedas:number, tiene_acoplado:boolean
+"AAA111", 10, 5, 10, true
+"FFF666", 12, 10, 8, false
+"GGG777", 15, 8, 12, true
+}
+
+Auto = {
+patente, es_electrico:boolean, tipo_motor
+"BBB222", true, "Electrico"
+"DDD444", false, "Nafta"
+"EEE555", true, "Electrico"
+"AAA564", false, "Diesel"
+}
+
+Service = {
+fecha, patente, km_service:number, observaciones, monto:number
+2019-03-15, "AAA111", 5000, "cambio de aceite", 5000
+2019-05-20, "BBB222", 12000, "inspeccion general", 7000
+2020-01-10, "CCC333", 40000, "reparacion", 10000
+2019-07-25, "DDD444", 10000, "cambio de aceite", 5500
+2019-08-30, "EEE555", 8000, "inspeccion general", 6000
+2019-10-05, "FFF666", 350000, "mantenimiento", 12000
+2019-11-12, "GGG777", 9000, "cambio de aceite", 4800
+2019-12-01, "AAA564", 15000, "revision", 3000
+}
+
+Parte = {
+cod_parte, nombre, precio_parte:number
+1, "filtro de aceite", 1000
+2, "filtro de combustible", 1500
+3, "bujias", 500
+4, "pastillas de freno", 2000
+}
+
+Service_Parte = {
+fecha, patente, cod_parte, precio:number, cantidad:number
+2019-03-15, "AAA111", 1, 1000, 1
+2019-05-20, "BBB222", 1, 1000, 1
+2019-05-20, "BBB222", 2, 1500, 1
+2019-05-20, "BBB222", 3, 500, 4
+2019-07-25, "DDD444", 1, 1000, 1
+2019-08-30, "EEE555", 1, 1000, 1
+2019-08-30, "EEE555", 4, 2000, 2
+2019-10-05, "FFF666", 1, 1000, 1
+2019-10-05, "FFF666", 3, 500, 1
+2019-11-12, "GGG777", 1, 1000, 1
+2019-12-01, "AAA564", 1, 1000, 1
+}

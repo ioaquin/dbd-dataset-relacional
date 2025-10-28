@@ -1,0 +1,46 @@
+group: Ejercicio4
+
+Equipo = {
+codigoE, nombreE, descripcionE
+10000, "Equipo A", "Equipo para eliminar"
+20000, "Equipo B", "Equipo que solo participa en 2019"
+30000, "Equipo C", "Equipo que participa en todas las lagunas"
+40000, "Equipo D", "Equipo normal"
+}
+
+Integrante = {
+DNI, nombre, apellido, ciudad, email, telefono, codigoE
+11111111, "Juan", "Perez", "La Plata", "juan@email.com", "221-111-1111", 10000
+22222222, "Maria", "Gomez", "La Plata", "maria@email.com", "221-222-2222", 20000
+33333333, "Carlos", "Lopez", "Buenos Aires", "carlos@email.com", "221-333-3333", 30000
+44444444, "Ana", "Martinez", "La Plata", "ana@email.com", "221-444-4444", 40000
+55555555, "Luis", "Garcia", "La Plata", "luis@email.com", "221-555-5555", 20000
+}
+
+Laguna = {
+nroLaguna, nombreL, ubicacion, extension, descripcion
+1, "laguna x", "Partido de La Plata", "100 hectareas", "Una laguna pequena"
+2, "Laguna Brava", "Partido de Junin", "500 hectareas", "Una laguna grande"
+3, "Laguna Verde", "Partido de Azul", "300 hectareas", "Laguna con torneos"
+}
+
+TorneoPesca = {
+codTorneo, fecha, hora, nroLaguna, descripcion
+101, 2019-05-15, "08:00", 1, "Torneo de primavera"
+102, 2019-06-20, "09:00", 2, "Torneo de invierno"
+103, 2019-07-10, "10:00", 3, "Torneo de verano"
+104, 2020-03-15, "08:00", 2, "Torneo de otono"
+105, 2020-04-20, "09:00", 1, "Torneo de pesca 2020"
+}
+
+Inscripcion = {
+codTorneo, codigoE, asistio, gano
+101, 10000, true, false
+101, 20000, true, true
+101, 30000, true, false
+102, 20000, true, false
+102, 30000, true, true
+103, 30000, true, false
+104, 40000, true, false
+105, 40000, true, true
+}

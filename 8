@@ -1,0 +1,49 @@
+group: Ejercicio8
+
+Barberia = {
+codBarberia, razon_social, direccion, telefono
+1, "Corta barba", "Calle 50 N 1234", "221-111-1111"
+2, "Barberia Barbara", "Av. 7 N 567", "221-222-2222"
+3, "Pelo & Barba", "Calle 10 N 432", "221-333-3333"
+4, "Estilo Masculino", "Diagonal 80 N 789", "221-444-4444"
+}
+
+Cliente = {
+nroCliente, DNI, nombreApellidoC, direccionC, fechaNacimiento, celular
+1, 11111111, "Juan Perez", "Calle 1 N 123", 1985-03-15, "221-555-5555"
+2, 22222222, "Carlos Garcia", "Calle 2 N 456", 1990-07-20, "221-666-6666"
+3, 33333333, "Luis Martinez", "Calle 3 N 789", 2000-11-25, "221-777-7777"
+4, 44444444, "Pedro Rodriguez", "Calle 4 N 321", 1995-05-10, "221-888-8888"
+5, 55555555, "Miguel Sanchez", "Calle 5 N 654", 2002-12-30, "221-999-9999"
+6, 66666666, "Jorge Lopez", "Calle 6 N 987", 1998-09-18, "221-000-0000"
+}
+
+Barbero = {
+codEmpleado, DNIB, nombreApellidoB, direccionB, telefonoContacto, mail
+101, 77777777, "Roberto Gomez", "Calle 7 N 159", "221-111-2222", "roberto@barberia.com"
+102, 88888888, "Martin Diaz", "Calle 8 N 753", "221-222-3333", "martin@barberia.com"
+103, 99999999, "Alejandro Ruiz", "Calle 9 N 456", "221-333-4444", "alejandro@barberia.com"
+104, 10101010, "Sergio Vega", "Calle 10 N 852", "221-444-5555", "sergio@barberia.com"
+}
+
+Atencion = {
+codEmpleado, fecha, hora, codBarberia, nroCliente, descTratamiento, valor:number
+101, 2023-12-15, "10:00", 1, 1, "Corte y barba", 4500
+101, 2024-01-20, "11:00", 1, 2, "Corte premium", 6000
+102, 2024-02-10, "15:00", 1, 3, "Corte y tintura", 5500
+103, 2024-03-05, "16:30", 2, 1, "Corte clasico", 3500
+101, 2024-04-12, "09:00", 1, 4, "Corte y mascarilla", 5200
+104, 2024-05-18, "14:00", 2, 2, "Arreglo barba", 4800
+102, 2024-06-22, "11:30", 1, 5, "Corte degradado", 4700
+103, 2024-07-30, "17:00", 2, 3, "Corte y perfilado", 5100
+101, 2024-08-25, "10:30", 1, 6, "Tratamiento completo", 7500
+102, 2024-09-05, "15:30", 1, 1, "Mantenimiento barba", 4200
+103, 2024-09-10, "16:00", 2, 4, "Corte ejecutivo", 3800
+104, 2024-09-15, "12:00", 3, 5, "Corte juvenil", 3500
+101, 2024-09-20, "09:30", 1, 2, "Corte y cejas", 5300
+102, 2024-09-25, "14:30", 4, 3, "Corte moderno", 4600
+103, 2024-01-10, "11:00", 2, 6, "Arreglo completo", 6200
+104, 2024-02-15, "16:30", 3, 1, "Corte basico", 3000
+101, 2024-09-28, "10:00", 1, 4, "Tratamiento capilar", 6800
+102, 2024-09-30, "15:00", 4, 5, "Corte y barba", 4900
+}

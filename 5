@@ -1,0 +1,70 @@
+group: Ejercicio5
+
+Ciudad = {
+codigoCiudad, nombre
+1, "La Plata"
+2, "Junin"
+3, "Chivilcoy"
+4, "Buenos Aires"
+5, "Rosario"
+}
+
+Club = {
+codigoClub, nombre, anioFundacion, codigoCiudad
+1, "River Plate", 1901, 4
+2, "Boca Juniors", 1905, 4
+3, "Rosario Central", 1889, 5
+4, "Estudiantes de La Plata", 1905, 1
+5, "Gimnasia y Esgrima La Plata", 1887, 1
+6, "Sarmiento de Junin", 1911, 2
+7, "Chivilcoy FC", 1900, 3
+}
+
+Estadio = {
+codigoEstadio, codigoClub, nombre, direccion
+1, 1, "Estadio Monumental", "Av. Pres. Figueroa Alcorta 7597"
+2, 2, "Estadio Alberto J. Armando", "Brandsen 805"
+3, 3, "Estadio Gigante de Arroyito", "Bv. Avellaneda 1351"
+4, 4, "Estadio Jorge Luis Hirschi", "Calle 1 y 55"
+5, 5, "Estadio Juan Carmelo Zerillo", "Calle 60 y 118"
+6, 6, "Estadio Eva Peron", "Av. Circunvalacion s/n"
+7, 7, "Estadio Municipal", "Calle 123"
+}
+
+Jugador = {
+dni, nombre, apellido, edad, codigoCiudad
+10000000, "Marcelo", "Gallardo", 45, 4
+24242424, "Juan", "Perez", 30, 1
+30000000, "Carlos", "Lopez", 22, 2
+40000000, "Luis", "Garcia", 26, 3
+50000000, "Pablo", "Rodriguez", 28, 3
+60000000, "Ana", "Martinez", 20, 1
+70000000, "Pedro", "Sanchez", 25, 5
+80000000, "Jose", "Fernandez", 32, 4
+90000000, "Roberto", "Carlos", 28, 4
+}
+
+ClubJugador = {
+codigoClub, dni, desde, hasta
+1, 90000000, 2016-01-01, null
+2, 90000000, 2010-01-01, 2015-12-31
+1, 10000000, 1995-01-01, 2010-12-31
+2, 10000000, 2011-01-01, 2012-12-31
+3, 10000000, 2013-01-01, 2014-12-31
+4, 10000000, 2015-01-01, 2016-12-31
+6, 30000000, 2020-01-01, null
+7, 40000000, 2018-01-01, null
+6, 50000000, 2017-01-01, 2020-12-31
+1, 50000000, 2021-01-01, null
+4, 60000000, 2021-01-01, null
+3, 70000000, 2019-01-01, null
+4, 24242424, 2015-01-01, 2020-12-31
+5, 24242424, 2021-01-01, null
+1, 80000000, 2010-01-01, 2010-12-31
+2, 80000000, 2011-01-01, 2011-12-31
+3, 80000000, 2012-01-01, 2012-12-31
+4, 80000000, 2013-01-01, 2013-12-31
+5, 80000000, 2014-01-01, 2014-12-31
+6, 80000000, 2015-01-01, 2015-12-31
+7, 80000000, 2016-01-01, 2016-12-31
+}

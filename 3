@@ -1,0 +1,49 @@
+group: Ejercicio3
+
+Ciudad = {
+CODIGOPOSTAL, nombreCiudad, annoCreacion:number
+1900, "La Plata", 1882
+2740, "Lincoln", 1865
+2000, "Rosario", 1852
+3000, "Santa Fe", 1573
+4000, "San Miguel de Tucuman", 1565
+5000, "Cordoba", 1573
+6000, "Junin", 1827
+}
+
+Agencia = {
+RAZON_SOCIAL, direccion, telef, e-mail
+"Viajes Rapido S.A.", "General Pinto 1234", "221-123-4567", "contacto@viajesrapido.com"
+"Turismo Seguro S.R.L.", "Av. 7 N 2345", "221-234-5678", "info@turismoseguro.com"
+"Transporte Economico", "Calle 60 N 789", "221-345-6789", "ventas@transporteeconomico.com"
+"Agencia Viajes 2019", "Calle 12 N 345", "221-456-7890", "agenciaviajes2019@example.com"
+}
+
+Cliente = {
+DNI, nombre, apellido, telefono, direccion
+25326992, "Juan", "Lopez", "221-111-1111", "Calle Falsa 123"
+22222222, "Julieta", "Rojas", "221-765-1098", "Calle 44 N 230"
+2789655, "Carlos", "Garcia", "221-000-0000", "Av. Siempre Viva 742"
+28345678, "Laura", "Gomez", "221-456-7890", "Calle 12 N 345"
+32567890, "Martin", "Perez", "221-321-4567", "Av. 7 N 890"
+21123456, "Nicolas", "Torres", "221-555-3321", "Diagonal 80 N 430"
+27456987, "Carla", "Medina", "221-876-5432", "Calle 60 N 789"
+19876543, "Pablo", "Suarez", "221-999-8888", "Av. 13 N 1001"
+12345678, "Ana", "Martinez", "221-777-8888", "Calle 100 N 500"
+}
+
+Viaje = {
+FECHA, HORA, DNI, cpOrigen, cpDestino, razon_social, descripcion
+2019-05-15, "08:00", 28345678, 1900, 2740, "Agencia Viajes 2019", "Viaje a Lincoln"
+2019-07-20, "16:00", 32567890, 2000, 3000, "Agencia Viajes 2019", "Viaje a Santa Fe"
+2019-08-25, "10:00", 12345678, 2000, 2740, "Agencia Viajes 2019", "Viaje a Lincoln"
+2019-11-10, "11:00", 12345678, 1900, 5000, "Viajes Rapido S.A.", "Viaje a Cordoba"
+2020-01-10, "10:00", 22222222, 1900, 2000, "Viajes Rapido S.A.", "Viaje a Rosario"
+2020-01-15, "10:00", 19876543, 6000, 6000, "Turismo Seguro S.R.L.", "Viaje local en Junin"
+2020-02-05, "09:30", 12345678, 1900, 3000, "Turismo Seguro S.R.L.", "Viaje a Santa Fe"
+2020-02-20, "14:30", 19876543, 6000, 6000, "Transporte Economico", "Otro viaje local"
+2020-03-10, "09:00", 22222222, 1900, 3000, "Viajes Rapido S.A.", "Viaje a Santa Fe"
+2020-04-15, "12:00", 28345678, 2000, 2740, "Turismo Seguro S.R.L.", "Viaje a Lincoln"
+2020-05-10, "08:00", 21123456, 2000, 2740, "Transporte Economico", "Viaje a Lincoln"
+2020-06-20, "15:00", 32567890, 3000, 4000, "Transporte Economico", "Viaje a Tucuman"
+}

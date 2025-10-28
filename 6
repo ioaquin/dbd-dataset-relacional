@@ -1,0 +1,47 @@
+group: Ejercicio6
+
+Empleado = {
+DNI, nombre, apellido, telefono, direccion, fechaIngreso
+30568965, "Juan", "Perez", "221-111-1111", "Calle 1 N 123", 2018-03-15
+40568965, "Maria", "Gomez", "221-222-2222", "Calle 2 N 456", 2019-06-20
+25568965, "Carlos", "Lopez", "221-333-3333", "Calle 3 N 789", 2020-01-10
+35568965, "Ana", "Martinez", "221-444-4444", "Calle 4 N 321", 2017-11-05
+45568965, "Pedro", "Sanchez", "221-555-5555", "Calle 5 N 654", 2019-08-25
+55568965, "Laura", "Rodriguez", "221-666-6666", "Calle 6 N 987", 2021-02-14
+65568965, "Diego", "Fernandez", "221-777-7777", "Calle 7 N 159", 2016-09-30
+75568965, "Sofia", "Garcia", "221-888-8888", "Calle 8 N 753", 2020-07-12
+}
+
+Equipo = {
+codEquipo, nombreE, descripcionTecnologias, DNILider
+1, "Backend Team A", "Java, Spring Boot, PostgreSQL", 30568965
+2, "Frontend Team B", "React, JavaScript, CSS", 40568965
+3, "Backend Team B", "Node.js, Express, MongoDB", 25568965
+4, "Frontend Team A", "Angular, TypeScript, SCSS", 35568965
+5, "Java Experts", "Java, Hibernate, MySQL", 45568965
+6, "Mobile Team", "React Native, Firebase", 55568965
+}
+
+Proyecto = {
+codProyecto, nombreP, descripcion, fechaInicioP, fechaFinP, fechaFinEstimada, DNIResponsable, equipoBackend, equipoFrontend
+101, "Proyecto X", "Sistema de gestion empresarial", 2019-01-15, 2019-12-20, 2019-11-30, 30568965, 1, 2
+102, "Proyecto Y", "Aplicacion movil de delivery", 2020-03-01, 2021-02-15, 2020-12-31, 40568965, 3, 4
+103, "Proyecto Z", "Plataforma e-commerce", 2019-06-10, 2020-01-20, 2019-12-31, 30568965, 1, 4
+104, "Proyecto W", "Sistema de analitica", 2020-08-01, null, 2021-06-30, 65568965, 5, 2
+105, "Proyecto V", "Portal web corporativo", 2019-02-01, 2019-10-31, 2019-09-30, 75568965, 1, 2
+}
+
+Empleado_Equipo = {
+codEquipo, DNI, fechaInicio, fechaFin, descripcionRol
+1, 30568965, 2019-01-01, null, "Lider"
+1, 45568965, 2019-01-01, 2020-12-31, "Desarrollador Senior"
+1, 55568965, 2020-01-01, null, "Desarrollador Junior"
+2, 40568965, 2019-01-01, null, "Lider"
+2, 75568965, 2019-01-01, null, "Diseñador UX"
+3, 25568965, 2020-01-01, null, "Lider"
+3, 65568965, 2020-01-01, null, "Desarrollador Backend"
+4, 35568965, 2019-01-01, null, "Lider"
+4, 75568965, 2019-01-01, 2020-06-30, "Desarrollador Frontend"
+5, 45568965, 2020-01-01, null, "Lider"
+6, 55568965, 2021-01-01, null, "Lider"
+}

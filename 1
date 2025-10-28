@@ -1,0 +1,59 @@
+group: Ejercicio1
+
+Cliente = {
+idCliente, nombre, apellido, DNI:number, telefono, direccion
+1, "Laura", "Gomez", 28345678, "221-456-7890", "Calle 12 N 345"
+2, "Martin", "Perez", 32567890, "221-321-4567", "Av. 7 N 890"
+3, "Julieta", "Rojas", 22222222, "221-765-1098", "Calle 44 N 230"
+4, "Nicolas", "Torres", 21123456, "221-555-3321", "Diagonal 80 N 430"
+5, "Carla", "Medina", 27456987, "221-876-5432", "Calle 60 N 789"
+6, "Pablo", "Suarez", 19876543, "221-999-8888", "Av. 13 N 1001"
+7, "Ana", "Garcia", 25326992, "221-777-6666", "Calle 80 N 567"
+8, "Diego", "Lopez", 29999999, "221-888-7777", "Av. 25 N 333"
+}
+
+Factura = {
+nroTicket, total:number, fecha, hora, idCliente:number
+1001, 84500.50, 2019-09-21, "14:23", 1
+1002, 7500.00, 2020-03-10, "17:40", 2
+1003, 48750.75, 2020-10-01, "10:12", 3
+1004, 536400.00, 2020-10-03, "11:45", 4
+1005, 99000.90, 2022-10-04, "09:35", 1
+1006, 87000.00, 2020-12-12, "13:10", 5
+1007, 120000.00, 2021-05-09, "16:00", 2
+1008, 50000.00, 2020-06-15, "15:30", 6
+1009, 150000.00, 2020-08-20, "11:00", 7
+1010, 25000.00, 2019-11-10, "16:45", 8
+}
+
+Producto = {
+idProducto, nombreP, descripcion, precio:number, stock:number
+1, "Producto A", "Notebook IdeaPad 15 8GB RAM", 520000, 8
+2, "Producto B", "Mouse optico inalambrico M170", 7500, 30
+3, "Producto C", "Teclado USB con teclas silenciosas", 8900, 25
+4, "ProductoX", "Monitor LED 24 FHD", 145000, 12
+5, "Producto Y", "Impresora multifuncion WiFi", 95000, 5
+6, "Producto Z", "Auriculares Bluetooth", 22000, 15
+7, "Producto D", "Tablet 10 pulgadas", 80000, 10
+8, "Producto E", "Smartwatch deportivo", 35000, 20
+9, "Producto F", "Radio RGB", 30000, 50
+}
+
+Detalle = {
+nroTicket, idProducto, cantidad:number, preciounitario:number
+1001, 2, 2, 7500
+1001, 3, 1, 8900
+1002, 2, 1, 7500
+1003, 4, 1, 145000
+1004, 1, 1, 520000
+1004, 3, 1, 8900
+1004, 2, 1, 7500
+1005, 5, 1, 95000
+1006, 6, 2, 22000
+1007, 3, 1, 8900
+1008, 1, 1, 520000
+1009, 4, 1, 145000
+1009, 7, 1, 80000
+1010, 8, 1, 35000
+1010, 2, 1, 7500
+}
